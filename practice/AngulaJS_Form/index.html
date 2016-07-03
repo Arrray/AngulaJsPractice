@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angula JS 表单验证</title>
+    <link rel="stylesheet" href="../../lib/bootstrap.min.css">
+    <style>
+        .error {
+            border-color: red;
+        }
+    </style>
+</head>
+<body ng-app="myApp" ng-controller="MianController">
+
+<form name="signUpForm" ng-submit="submitForm()">
+    <div class="form-group">
+        <label>用户名:</label>
+        <input name="username"
+               ng-model="username"
+               ng-class="{ 'error': signUpForm.username.$invalid && signUpForm.username.$touched }"
+               ng-minlength="4"
+               ng-maxlength="10"
+               required
+               class="form-control">
+        <!--<div ng-if="signUpForm.username.$invalid && signUpForm.username.$touched">您发输入有误,请检查</div>-->
+
+
+    </div>
+    <button type="submit" ng-disabled="signUpForm.$invalid" class="btn btn-primary">提交</button>
+</form>
+
+<!--<input calss="form-control" ng-model="name" type="text" ng-minlength="4" ng-maxlength="10">-->
+<!--<div>{{ name }}</div>-->
+
+<script src="../../lib/angular.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
