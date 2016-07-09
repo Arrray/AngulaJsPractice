@@ -60,6 +60,7 @@
     font: 14px/35px "Microsoft YaHei","微软雅黑";
     color: #ffffff;
     margin-right: 59px;
+    display: inline;
 }
 .shopText {
     /*font-size: 14px;*/
@@ -131,14 +132,18 @@
     left: 0px;
     top: 35px;
     width: 100%;
+    padding-bottom: 1px;
 }
 .shopClass_item {
-    padding: 14px 10px;
+    padding: 13px 10px;
     border-bottom: #3487f2 solid 1px;
     border-top: #5aa1fe solid 1px;
+    line-height: 16px;
 }
 .shopClass_item dt {
-    height: 22px;
+    height: 21px;
+    line-height: 1px;
+    overflow: hidden;
     background: url("../image/icon/show_sanjiao.png") right center no-repeat;
 }
 .shopClass-item .b h3{
@@ -402,9 +407,30 @@
     line-height: 30px;
 }
 
-
-
-
+/*底部*/
+.footer {
+    text-align: center;
+    background-color: #d4d4d4;
+    line-height: 24px;
+    padding: 50px 0;
+    margin-top: 25px;
+}
+.footer i {
+    font-style: normal;
+    margin: 0 5px;
+}
+.footer a {
+    color: #000;
+}
+.footer a:hover {
+    color: #f60;
+}
+.web {
+    padding-top: 30px;
+}
+.web img {
+    margin: 0 12px;
+}
 
 
 
