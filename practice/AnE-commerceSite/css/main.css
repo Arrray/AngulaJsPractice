@@ -431,7 +431,14 @@
 .web img {
     margin: 0 12px;
 }
-
+/*添加空白隔行*/
+.hr_25 {
+    height: 25px;
+}
+.hr_7 {
+    height: 7px;
+    overflow: hidden;
+}
 
 
 
